@@ -2,7 +2,7 @@ var root = new Vue({
   el: '#root',
   data: {
     // generated_mail : '',
-    // elenco_mail : [],
+    elenco_mail : [],
 
     },
     methods : {
@@ -20,8 +20,8 @@ var root = new Vue({
                  console.log(generated_mail_1);
                  // console.log(generated_mail.data.response);
                  // generated_mail.data.response.push(root.data.elenco_mail);
-
-                 elenco_mail.push(generated_mail_1);
+                 self.elenco_mail.push(generated_mail_1);
+                 // elenco_mail.push(generated_mail_1);
                  // console.log(elenco_mail);
 
             })
